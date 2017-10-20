@@ -18,7 +18,7 @@
   actions:
   - action: "Build & Deploy Docker image"
     type: "DOCKERFILE"
-    login: "btsuhako"
+    login: "${docker-username}"
     password: "${docker-password}"
     docker_image_tag: "latest"
     dockerfile_path: "Dockerfile"
