@@ -8,7 +8,7 @@ def sumMax(args):
     parser.add_argument('integers', metavar='N', type=float, nargs='+',
                         help='an integer for the accumulator')
     parser.add_argument('--sum', dest='accumulate', action='store_const',
-                        const=numpy.median, default=max,
+                        const=numpy.sum, default=max,
                         help='sum the integers (default: find the max)')
     parsedArgs = parser.parse_args(args)
     print(parsedArgs.accumulate(parsedArgs.integers))
